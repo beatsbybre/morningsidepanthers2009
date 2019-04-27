@@ -60,7 +60,6 @@
       <script src="https://js.stripe.com/v3"></script>
 
       <!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
-
       <button
         style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
         id="checkout-button-sku_ExZg6FrYUV4WKr"
@@ -87,8 +86,10 @@
               // Note that it is not guaranteed your customers will be redirected to this
               // URL *100%* of the time, it's possible that they could e.g. close the
               // tab between form submission and the redirect.
-              successUrl: "http://dbeatdynamic.com/success",
-              cancelUrl: "http://dbeatdynamic.com/canceled"
+              successUrl:
+                "http://morningsidepanthers2009.dbeatdynamic.com/success",
+              cancelUrl:
+                "http://morningsidepanthers2009.dbeatdynamic.com/canceled"
             })
             .then(function(result) {
               if (result.error) {
