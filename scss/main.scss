@@ -29,12 +29,13 @@ h3 {
   &.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(lighten($primary-color, 2), 0.5);
+    background: rgba(lighten($secondary-color, 2), 1);
+    color: #fff;
   }
 }
 
 a {
-  color: #fff;
+  color: #000;
   text-decoration: none;
 }
 

@@ -11,7 +11,10 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/main.css" />
-    <title>WElcome To My Portfolio</title>
+    <title>Welcome To My Generic Site</title>
+
+    <!-- Load Stripe.js on your website. -->
+    <script src="https://js.stripe.com/v3"></script>
   </head>
   <body id="bg-img">
     <header>
@@ -52,23 +55,65 @@
 
     <main id="home">
       <h1 class="lg-heading">
-        Brett <span class="text-secondary">Connell</span>
+        Generic <span class="text-secondary">Site</span>
       </h1>
       <h2 class="sm-heading">
-        Web Developer, Programmer, Designer & Entrepreneur
+        Web Pages, Payment Processing Portal, Event Management, Marketing &
+        Sales
       </h2>
+
       <div class="icons">
+        <!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
+
+        <button
+          style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
+          id="checkout-button-sku_ExZg6FrYUV4WKr"
+          role="link"
+        >
+          Checkout
+        </button>
+
+        <div id="error-message"></div>
+
+        <script>
+          var stripe = Stripe("pk_live_CplOzOmJdlSDDjn5dL28wnub");
+
+          var checkoutButton = document.getElementById(
+            "checkout-button-sku_ExZg6FrYUV4WKr"
+          );
+          checkoutButton.addEventListener("click", function() {
+            // When the customer clicks on the button, redirect
+            // them to Checkout.
+            stripe
+              .redirectToCheckout({
+                items: [{ sku: "sku_ExZg6FrYUV4WKr", quantity: 1 }],
+
+                // Note that it is not guaranteed your customers will be redirected to this
+                // URL *100%* of the time, it's possible that they could e.g. close the
+                // tab between form submission and the redirect.
+                successUrl: "http://dbeatdynamic.com/success",
+                cancelUrl: "http://dbeatdynamic.com/canceled"
+              })
+              .then(function(result) {
+                if (result.error) {
+                  // If `redirectToCheckout` fails due to a browser or network
+                  // error, display the localized error message to your customer.
+                  var displayError = document.getElementById("error-message");
+                  displayError.textContent = result.error.message;
+                }
+              });
+          });
+        </script>
+
+        <a href="#!"> <i class="fas fa-trophy fa-2x"></i> </a>
         <a href="#!">
-          <i class="fab fa-twitter fa-2x"></i>
+          <i class="fas fa-store fa-2x"></i>
         </a>
         <a href="#!">
-          <i class="fab fa-facebook fa-2x"></i>
+          <i class="fas fa-hand-holding-usd fa-2x"></i>
         </a>
         <a href="#!">
-          <i class="fab fa-linkedin fa-2x"></i>
-        </a>
-        <a href="#!">
-          <i class="fab fa-github fa-2x"></i>
+          <i class="fas fa-hand-holding-heart fa-2x"></i>
         </a>
       </div>
     </main>
