@@ -148,7 +148,8 @@ main {
   padding: 2rem;
   min-height: calc(100vh - 10px); }
   main .icons {
-    margin-top: 1rem; }
+    margin-top: 1rem;
+    object-position: inherit; }
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
