@@ -92,19 +92,23 @@
         <!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
         <a
           ><i
-            class="fas fa-ticket-alt fa-5x"
+            class="fas fa-ticket-alt fa-8x"
             id="checkout-button-sku_ExZg6FrYUV4WKr"
             role="link"
           ></i
         ></a>
-        <a href="#!">
-          <i class="fas fa-store fa-5x"></i>
+        <a>
+          <i
+            class="fas fa-tshirt-8x"
+            id="checkout-button-sku_EyVEm02fh3Skig"
+            role="link"
+          ></i>
         </a>
         <a href="#!">
-          <i class="fas fa-hand-holding-usd fa-5x"></i>
+          <i class="fas fa-hand-holding-usd fa-8x"></i>
         </a>
         <a href="#!">
-          <i class="fas fa-hand-holding-heart fa-5x"></i>
+          <i class="fas fa-hand-holding-heart fa-8x"></i>
         </a>
       </div>
 
@@ -114,14 +118,14 @@
         var stripe = Stripe("pk_live_CplOzOmJdlSDDjn5dL28wnub");
 
         var checkoutIcon = document.getElementById(
-          "checkout-button-sku_ExZg6FrYUV4WKr"
+          "checkout-button-sku_ExZg6FrYUV4WKr", "checkout-button-sku_EyVEm02fh3Skig"
         );
         checkoutIcon.addEventListener("click", function() {
           // When the customer clicks on the button, redirect
           // them to Checkout.
           stripe
             .redirectToCheckout({
-              items: [{ sku: "sku_ExZg6FrYUV4WKr", quantity: 1 }],
+              items: [{ sku: "sku_ExZg6FrYUV4WKr", quantity: 1 }], [{sku: "sku_EyVEm02fh3Skig", quantity: 1}],
 
               // Note that it is not guaranteed your customers will be redirected to this
               // URL *100%* of the time, it's possible that they could e.g. close the
