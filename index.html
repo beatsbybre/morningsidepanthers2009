@@ -92,7 +92,7 @@
         <a
           ><i
             class="fas fa-ticket-alt fa-8x"
-            id="checkout-button-sku_ExZg6FrYUV4WKr"
+            id="checkout-button-sku_EyVVaB4n9Vormh"
             role="link"
           ></i>
 
@@ -102,14 +102,14 @@
             var stripe = Stripe("pk_live_CplOzOmJdlSDDjn5dL28wnub");
 
             var checkoutIcon = document.getElementById(
-              "checkout-button-sku_ExZg6FrYUV4WKr"
+              "checkout-button-sku_EyVVaB4n9Vormh"
             );
             checkoutIcon.addEventListener("click", function() {
               // When the customer clicks on the button, redirect
               // them to Checkout.
               stripe
                 .redirectToCheckout({
-                  items: [{ sku: "sku_ExZg6FrYUV4WKr", quantity: 1 }],
+                  items: [{ sku: "sku_EyVVaB4n9Vormh", quantity: 1 }],
 
                   // Note that it is not guaranteed your customers will be redirected to this
                   // URL *100%* of the time, it's possible that they could e.g. close the
@@ -130,6 +130,175 @@
           </script></a
         >
 
+        <!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
+        <a
+          ><i
+            class="fas fa-check-square fa-8x"
+            id="checkout-button-sku_EyVYX5DLa6CNoO"
+            role="link"
+          ></i>
+
+          <div id="error-message"></div>
+
+          <script>
+            var stripe = Stripe("pk_live_CplOzOmJdlSDDjn5dL28wnub");
+
+            var checkoutIcon = document.getElementById(
+              "checkout-button-sku_EyVYX5DLa6CNoO"
+            );
+            checkoutIcon.addEventListener("click", function() {
+              // When the customer clicks on the button, redirect
+              // them to Checkout.
+              stripe
+                .redirectToCheckout({
+                  items: [{ sku: "sku_EyVYX5DLa6CNoO", quantity: 1 }],
+
+                  // Note that it is not guaranteed your customers will be redirected to this
+                  // URL *100%* of the time, it's possible that they could e.g. close the
+                  // tab between form submission and the redirect.
+                  successUrl:
+                    "http://morningsidepanthers2009.dbeatdynamic.com/success",
+                  cancelUrl: "http://morningsidepanthers2009.dbeatdynamic.com/"
+                })
+                .then(function(result) {
+                  if (result.error) {
+                    // If `redirectToCheckout` fails due to a browser or network
+                    // error, display the localized error message to your customer.
+                    var displayError = document.getElementById("error-message");
+                    displayError.textContent = result.error.message;
+                  }
+                });
+            });
+          </script></a
+        >
+
+        <!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
+        <a
+          ><i
+            class="fas fa-tshirt fa-8x"
+            id="checkout-button-sku_EyVcJNp8FikeO6"
+            role="link"
+          ></i>
+
+          <div id="error-message"></div>
+
+          <script>
+            var stripe = Stripe("pk_live_CplOzOmJdlSDDjn5dL28wnub");
+
+            var checkoutIcon = document.getElementById(
+              "checkout-button-sku_EyVcJNp8FikeO6"
+            );
+            checkoutIcon.addEventListener("click", function() {
+              // When the customer clicks on the button, redirect
+              // them to Checkout.
+              stripe
+                .redirectToCheckout({
+                  items: [{ sku: "sku_EyVcJNp8FikeO6", quantity: 1 }],
+
+                  // Note that it is not guaranteed your customers will be redirected to this
+                  // URL *100%* of the time, it's possible that they could e.g. close the
+                  // tab between form submission and the redirect.
+                  successUrl:
+                    "http://morningsidepanthers2009.dbeatdynamic.com/success",
+                  cancelUrl: "http://morningsidepanthers2009.dbeatdynamic.com/"
+                })
+                .then(function(result) {
+                  if (result.error) {
+                    // If `redirectToCheckout` fails due to a browser or network
+                    // error, display the localized error message to your customer.
+                    var displayError = document.getElementById("error-message");
+                    displayError.textContent = result.error.message;
+                  }
+                });
+            });
+          </script></a
+        >
+
+        <!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
+        <a
+          ><i
+            class="fas fa-wine-bottle fa-8x"
+            id="checkout-button-sku_EyVf7i2GkdnxrV"
+            role="link"
+          ></i>
+
+          <div id="error-message"></div>
+
+          <script>
+            var stripe = Stripe("pk_live_CplOzOmJdlSDDjn5dL28wnub");
+
+            var checkoutIcon = document.getElementById(
+              "checkout-button-sku_EyVf7i2GkdnxrV"
+            );
+            checkoutIcon.addEventListener("click", function() {
+              // When the customer clicks on the button, redirect
+              // them to Checkout.
+              stripe
+                .redirectToCheckout({
+                  items: [{ sku: "sku_EyVf7i2GkdnxrV", quantity: 1 }],
+
+                  // Note that it is not guaranteed your customers will be redirected to this
+                  // URL *100%* of the time, it's possible that they could e.g. close the
+                  // tab between form submission and the redirect.
+                  successUrl:
+                    "http://morningsidepanthers2009.dbeatdynamic.com/success",
+                  cancelUrl: "http://morningsidepanthers2009.dbeatdynamic.com/"
+                })
+                .then(function(result) {
+                  if (result.error) {
+                    // If `redirectToCheckout` fails due to a browser or network
+                    // error, display the localized error message to your customer.
+                    var displayError = document.getElementById("error-message");
+                    displayError.textContent = result.error.message;
+                  }
+                });
+            });
+          </script></a
+        >
+
+        <!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
+        <a
+          ><i
+            class="fas fa-address-card fa-8x"
+            id="checkout-button-sku_EyVh7AYteB4PHU"
+            role="link"
+          ></i>
+
+          <div id="error-message"></div>
+
+          <script>
+            var stripe = Stripe("pk_live_CplOzOmJdlSDDjn5dL28wnub");
+
+            var checkoutIcon = document.getElementById(
+              "checkout-button-sku_EyVh7AYteB4PHU"
+            );
+            checkoutIcon.addEventListener("click", function() {
+              // When the customer clicks on the button, redirect
+              // them to Checkout.
+              stripe
+                .redirectToCheckout({
+                  items: [{ sku: "sku_EyVh7AYteB4PHU", quantity: 1 }],
+
+                  // Note that it is not guaranteed your customers will be redirected to this
+                  // URL *100%* of the time, it's possible that they could e.g. close the
+                  // tab between form submission and the redirect.
+                  successUrl:
+                    "http://morningsidepanthers2009.dbeatdynamic.com/success",
+                  cancelUrl: "http://morningsidepanthers2009.dbeatdynamic.com/"
+                })
+                .then(function(result) {
+                  if (result.error) {
+                    // If `redirectToCheckout` fails due to a browser or network
+                    // error, display the localized error message to your customer.
+                    var displayError = document.getElementById("error-message");
+                    displayError.textContent = result.error.message;
+                  }
+                });
+            });
+          </script></a
+        >
+      </div>
+      <!--
         <a href="#!">
           <i class="fas fa-store fa-8x"></i>
         </a>
@@ -139,7 +308,7 @@
         <a href="#!">
           <i class="fas fa-hand-holding-heart fa-8x"></i>
         </a>
-      </div>
+-->
     </main>
 
     <script src="js/main.js"></script>
