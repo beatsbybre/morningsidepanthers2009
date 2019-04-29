@@ -2,7 +2,7 @@ $primary-color: #fff;
 $secondary-color: #ff001b;
 $show-home-image: true;
 $home-image: url(../img/background.jpg);
-$background-opacity: 0.6;
+$background-opacity: 0.9;
 
 @mixin easeOut {
   transition: all 0.5s ease-out;
@@ -23,7 +23,7 @@ $background-opacity: 0.6;
         width: 100%;
         height: 100%;
         z-index: -1;
-        background: rgba($primary-color, $background-opacity);
+        //background: rgba($primary-color, $background-opacity);
       }
     }
   }
@@ -40,7 +40,7 @@ $background-opacity: 0.6;
 
 // Media Query Mixins
 @mixin mediaSm {
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 372px) {
     @content;
   }
 }
