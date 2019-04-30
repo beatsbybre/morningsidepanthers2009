@@ -15,7 +15,7 @@ $background-opacity: 0.6;
       background-attachment: fixed;
       background-size: cover;
 
-      .overlay {
+      &:after {
         content: "";
         position: absolute;
         top: 0;
@@ -40,13 +40,13 @@ $background-opacity: 0.6;
 
 // Media Query Mixins
 @mixin mediaSm {
-  @media screen and (max-width: 372px) {
+  @media screen and (max-width: 500px) {
     @content;
   }
 }
 
 @mixin mediaMd {
-  @media screen (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     @content;
   }
 }
