@@ -30,6 +30,7 @@
     <title>Morningside Panthers 2009 Premiership Reunion</title>
   </head>
   <body id="bg-img">
+    <div class="overlay"></div>
     <!-- Google Tag Manager (noscript) -->
     <noscript
       ><iframe
@@ -129,50 +130,46 @@
             });
           </script></a
         >
-
-        <!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
-        <a
-          ><i
+        <a>
+          <i
             class="fas fa-check-square fa-5x"
             id="checkout-button-sku_EyVYX5DLa6CNoO"
             role="link"
-          ></i>
+          ></i
+        ></a>
 
-          <div id="error-message"></div>
+        <div id="error-message"></div>
 
-          <script>
-            var stripe = Stripe("pk_live_CplOzOmJdlSDDjn5dL28wnub");
+        <script>
+          var stripe = Stripe("pk_live_CplOzOmJdlSDDjn5dL28wnub");
 
-            var checkoutIcon = document.getElementById(
-              "checkout-button-sku_EyVYX5DLa6CNoO"
-            );
-            checkoutIcon.addEventListener("click", function() {
-              // When the customer clicks on the button, redirect
-              // them to Checkout.
-              stripe
-                .redirectToCheckout({
-                  items: [{ sku: "sku_EyVYX5DLa6CNoO", quantity: 1 }],
+          var checkoutIcon = document.getElementById(
+            "checkout-button-sku_EyVYX5DLa6CNoO"
+          );
+          checkoutIcon.addEventListener("click", function() {
+            // When the customer clicks on the button, redirect
+            // them to Checkout.
+            stripe
+              .redirectToCheckout({
+                items: [{ sku: "sku_EyVYX5DLa6CNoO", quantity: 1 }],
 
-                  // Note that it is not guaranteed your customers will be redirected to this
-                  // URL *100%* of the time, it's possible that they could e.g. close the
-                  // tab between form submission and the redirect.
-                  successUrl:
-                    "http://morningsidepanthers2009.dbeatdynamic.com/success",
-                  cancelUrl: "http://morningsidepanthers2009.dbeatdynamic.com/"
-                })
-                .then(function(result) {
-                  if (result.error) {
-                    // If `redirectToCheckout` fails due to a browser or network
-                    // error, display the localized error message to your customer.
-                    var displayError = document.getElementById("error-message");
-                    displayError.textContent = result.error.message;
-                  }
-                });
-            });
-          </script></a
-        >
-
-        <!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
+                // Note that it is not guaranteed your customers will be redirected to this
+                // URL *100%* of the time, it's possible that they could e.g. close the
+                // tab between form submission and the redirect.
+                successUrl:
+                  "http://morningsidepanthers2009.dbeatdynamic.com/success",
+                cancelUrl: "http://morningsidepanthers2009.dbeatdynamic.com/"
+              })
+              .then(function(result) {
+                if (result.error) {
+                  // If `redirectToCheckout` fails due to a browser or network
+                  // error, display the localized error message to your customer.
+                  var displayError = document.getElementById("error-message");
+                  displayError.textContent = result.error.message;
+                }
+              });
+          });
+        </script>
         <a
           ><i
             class="fas fa-tshirt fa-5x"
@@ -310,13 +307,12 @@
         </a>
 -->
     </main>
-
-    <script src="js/main.js"></script>
     <footer id="main-footer">
       Copyright &copy; 2019
       <a href="https://dbeatdynamic.com">
         Created To The Dbeat! Find Out How!</a
       >
     </footer>
+    <script src="js/main.js"></script>
   </body>
 </html>
