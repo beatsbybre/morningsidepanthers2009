@@ -20,16 +20,17 @@ h1,
 h2,
 h3 {
   margin: 0px;
-  font-weight: 400;
+  font-weight: 800;
 
   &.lg-heading {
-    font-size: 4rem;
+    font-size: 6rem;
     text-align: center;
+    margin-bottom: 1rem;
   }
 
   &.sm-heading {
     margin-bottom: 1rem;
-    padding: 0.2rem 1rem;
+    padding: 1rem 1rem;
     background: rgba(lighten($secondary-color, 2), 1);
     color: #fff;
   }
@@ -57,14 +58,33 @@ main {
 
   .icons {
     margin-top: 1rem;
-    align-content: space-between;
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-areas: "icon1 icon2 icon3 icon4 icon5";
+    grid-template-columns: repeat(5, 1fr);
+
+    .icon1 {
+      grid-area: icon1;
+    }
+
+    .icon2 {
+      grid-area: icon2;
+    }
+
+    .icon3 {
+      grid-area: icon3;
+    }
+
+    .icon4 {
+      grid-area: icon4;
+    }
+
+    .icon5 {
+      grid-area: icon5;
+    }
 
     a {
-      padding: 1rem;
-
-      link {
-        display: inline-block;
-      }
+      padding: 0.8rem;
 
       &:hover {
         color: $secondary-color;

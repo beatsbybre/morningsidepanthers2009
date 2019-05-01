@@ -12,7 +12,7 @@
     background: #000;
     transition: all 0.5s ease-out; }
   .menu-btn.close {
-    transform: rotate(540deg); }
+    transform: rotate(360deg); }
     .menu-btn.close .btn-line:nth-child(1) {
       transform: rotate(45deg) translate(5px, 5px); }
     .menu-btn.close .btn-line:nth-child(2) {
@@ -118,17 +118,18 @@ h1,
 h2,
 h3 {
   margin: 0px;
-  font-weight: 400; }
+  font-weight: 800; }
   h1.lg-heading,
   h2.lg-heading,
   h3.lg-heading {
-    font-size: 4rem;
-    text-align: center; }
+    font-size: 6rem;
+    text-align: center;
+    margin-bottom: 1rem; }
   h1.sm-heading,
   h2.sm-heading,
   h3.sm-heading {
     margin-bottom: 1rem;
-    padding: 0.2rem 1rem;
+    padding: 1rem 1rem;
     background: #ff0a24;
     color: #fff; }
 
@@ -149,11 +150,22 @@ main {
   min-height: calc(100vh - 10px); }
   main .icons {
     margin-top: 1rem;
-    align-content: space-between; }
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-areas: "icon1 icon2 icon3 icon4 icon5";
+    grid-template-columns: repeat(5, 1fr); }
+    main .icons .icon1 {
+      grid-area: icon1; }
+    main .icons .icon2 {
+      grid-area: icon2; }
+    main .icons .icon3 {
+      grid-area: icon3; }
+    main .icons .icon4 {
+      grid-area: icon4; }
+    main .icons .icon5 {
+      grid-area: icon5; }
     main .icons a {
-      padding: 1rem; }
-      main .icons a link {
-        display: inline-block; }
+      padding: 0.8rem; }
       main .icons a:hover {
         color: #ff001b;
         transition: all 0.5s ease-out; }
@@ -251,14 +263,26 @@ main {
 @media screen and (min-width: 1171px) {
   main {
     text-align: center; }
+    main .h2 {
+      font-size: 2rem; }
     main .lg-heading {
       line-height: 1;
       margin-bottom: 1rem;
       text-align: center;
-      font-size: 5rem; }
+      font-size: 6rem; }
+    main .sm-heading {
+      line-height: 1;
+      margin-bottom: 2.5rem;
+      text-align: center;
+      font-size: 3rem;
+      margin-top: 2.5rem; }
+    main .justifiedText {
+      text-align: justify; }
     main .sponsor {
       grid-template-columns: repeat(3, 1fr);
-      align-items: center; } }
+      align-items: center; }
+    main p {
+      font-size: 1.3rem; } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   main {
@@ -270,19 +294,37 @@ main {
       line-height: 1;
       margin-bottom: 1rem;
       text-align: center;
-      font-size: 3rem; } }
+      font-size: 6rem; }
+    main .sm-heading {
+      line-height: 1;
+      margin-bottom: 1rem;
+      text-align: center;
+      font-size: 3rem; }
+    main .justifiedText {
+      text-align: justify; }
+    main p {
+      font-size: 1.3rem; } }
 
 @media screen and (max-width: 768px) {
   main {
     align-items: center;
     text-align: center; }
+    main .h2 {
+      font-size: 2rem; }
     main .lg-heading {
       line-height: 1;
       margin-bottom: 0.5rem;
       text-align: center;
-      font-size: 3rem; }
+      font-size: 5rem; }
+    main .sm-heading {
+      line-height: 1;
+      margin-bottom: 1rem;
+      text-align: center;
+      font-size: 2.5rem; }
     main .justifiedText {
       text-align: justify; }
+    main p {
+      font-size: 1.3rem; }
   ul.menu-nav,
   div.menu-branding {
     float: none;
@@ -317,4 +359,13 @@ main {
     line-height: 1;
     margin-bottom: 1rem;
     text-align: center;
-    font-size: 2rem; } }
+    font-size: 4rem; }
+  main .sm-heading {
+    line-height: 1;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 2rem; }
+  main .justifiedText {
+    text-align: justify; }
+  main p {
+    font-size: 1.3rem; } }
