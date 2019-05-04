@@ -21,6 +21,7 @@ h2,
 h3 {
   margin: 0px;
   font-weight: 800;
+  text-align: center;
 
   &.lg-heading {
     font-size: 6rem;
@@ -53,7 +54,7 @@ header {
 }
 
 main {
-  padding: 2rem;
+  padding: 1rem;
   // height: 100%;
   min-height: calc(100vh - 10px);
 
@@ -112,8 +113,8 @@ main {
   grid-template-columns: repeat(3, 1fr);
 
   .bio-image {
-    width: 250px;
-    height: 250px;
+    width: 122px;
+    height: 122px;
     grid-area: bioimage;
     margin: auto;
     border-radius: 50%;
@@ -157,22 +158,62 @@ main {
 }
 
 // Sponsorship Page
-
 .sponsor {
+  &:hover {
+    opacity: 0.5;
+    border-color: $secondary-color;
+    @include easeOut;
+  }
+
   display: grid;
+  text-align: -webkit-center;
   grid-gap: 0.7rem;
+  grid-template-areas:
+    "sponsorship1 sponsorship2 sponsorship3"
+    "links1 links2 links3";
+
   grid-template-columns: repeat(3, 1fr);
 
-  img {
+  img.sponsorship1 {
     width: 250px;
     height: 250px;
-    border: 3px #fff solid;
+    grid-area: sponsorship1;
+    margin: auto;
+    border: $primary-color 3px solid;
+    text-align: -webkit-center;
+  }
 
-    &:hover {
-      opacity: 0.5;
-      border-color: $secondary-color;
-      @include easeOut;
-    }
+  .sponsorship2 {
+    width: 250px;
+    height: 250px;
+    grid-area: sponsorship2;
+    margin: auto;
+    border: $primary-color 3px solid;
+    text-align: -webkit-center;
+  }
+
+  .sponsorship3 {
+    width: 250px;
+    height: 250px;
+    grid-area: sponsorship3;
+    margin: auto;
+    border: $primary-color 3px solid;
+    text-align: -webkit-center;
+  }
+
+  .links1 {
+    grid-area: links1;
+    text-align: -webkit-center;
+  }
+
+  .links2 {
+    grid-area: links2;
+    text-align: -webkit-center;
+  }
+
+  .links3 {
+    grid-area: links3;
+    text-align: -webkit-center;
   }
 }
 
@@ -215,6 +256,7 @@ main {
   padding: 0.5rem 1rem;
   border: 0;
   margin-bottom: 0.3rem;
+  text-align: center;
   &:hover {
     background: $secondary-color;
     color: set-text-color($secondary-color);
@@ -223,7 +265,7 @@ main {
 
 .btn-dark {
   @extend .btn;
-  background: darken($primary-color, 50);
+  background: darken($primary-color, 100);
   color: #fff;
 }
 

@@ -34,7 +34,7 @@
       align-items: center;
     }
     p {
-      font-size: 1.3rem;
+      font-size: 1rem;
     }
   }
 }
@@ -70,7 +70,7 @@
       font-size: 1.3rem;
     }
     p {
-      font-size: 1.3rem;
+      font-size: 1rem;
     }
   }
 }
@@ -107,34 +107,7 @@
       font-size: 1.3rem;
     }
     p {
-      font-size: 1.3rem;
-    }
-  }
-  ul.menu-nav,
-  div.menu-branding {
-    float: none;
-    width: 100%;
-    min-height: 0;
-
-    &.show {
-      transform: translate3d(0, 0, 0);
-    }
-  }
-
-  .menu-nav {
-    height: 75vh;
-    transform: translate3d(-100%, 0, 0);
-    font-size: 24px;
-  }
-
-  .menu-branding {
-    height: 25vh;
-    transform: translate3d(100%, 0, 0);
-
-    .portrait {
-      background: url("../img/portrait_small.jpg");
-      width: 122px;
-      height: 122px;
+      font-size: 1rem;
     }
   }
 
@@ -153,7 +126,14 @@
   }
 
   .sponsor {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+      "sponsorship1"
+      "links1"
+      "sponsorship2"
+      "links2"
+      "sponsorship3"
+      "links3";
+    grid-template-columns: 1fr;
   }
 }
 
@@ -189,15 +169,40 @@
       font-size: 1.3rem;
     }
     p {
-      font-size: 1.3rem;
+      font-size: 1rem;
+    }
+
+    .main-info {
+      grid-template-areas:
+        "bioimage"
+        "bio"
+        "job1"
+        "buttons1"
+        "job2"
+        "buttons2"
+        "job3"
+        "buttons3";
+
+      grid-template-columns: 1fr;
+    }
+
+    .sponsor {
+      grid-template-areas:
+        "sponsorship1"
+        "links1"
+        "sponsorship2"
+        "links2"
+        "sponsorship3"
+        "links3";
+      grid-template-columns: 1fr;
     }
   }
-
   ul.menu-nav,
   div.menu-branding {
     float: none;
     width: 100%;
     min-height: 0;
+    text-align: center;
 
     &.show {
       transform: translate3d(0, 0, 0);
