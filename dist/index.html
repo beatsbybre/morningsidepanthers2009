@@ -138,7 +138,7 @@
           <a
             ><i
               class="fas fa-tshirt fa-4x"
-              id="checkout-button-sku_EyVcJNp8FikeO6"
+              id="checkout-button-sku_F0HLYp9ArGYVTp"
               role="link"
             ></i>
 
@@ -148,14 +148,14 @@
               var stripe = Stripe("pk_live_CplOzOmJdlSDDjn5dL28wnub");
 
               var checkoutIcon = document.getElementById(
-                "checkout-button-sku_EyVcJNp8FikeO6"
+                "checkout-button-sku_F0HLYp9ArGYVTp"
               );
               checkoutIcon.addEventListener("click", function() {
                 // When the customer clicks on the button, redirect
                 // them to Checkout.
                 stripe
                   .redirectToCheckout({
-                    items: [{ sku: "sku_EyVcJNp8FikeO6", quantity: 1 }],
+                    items: [{ sku: "sku_F0HLYp9ArGYVTp", quantity: 1 }],
 
                     // Note that it is not guaranteed your customers will be redirected to this
                     // URL *100%* of the time, it's possible that they could e.g. close the
@@ -291,7 +291,7 @@
     </main>
     <footer id="main-footer">
       Copyright &copy; 2019
-      <a href="https://dbeatdynamic.com">
+      <a href="https://morningsidepanthers2009.dbeatdynamic.com/contact.html">
         Created To The Dbeat! Find Out How!</a
       >
     </footer>
