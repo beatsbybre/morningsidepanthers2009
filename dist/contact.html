@@ -93,9 +93,39 @@
           <span class="text-secondary">Address:</span> 123 Premiership Lane,
           Morningside, QLD 4172
         </div>
+        <div class="boxes">
+        <form name="contact" method="POST" data-netlify="true">
+          <span class="text-secondary"
+            ><label class="label">Name: <input type="text" name="name"/></label
+          ></span>
+          <span class="text-secondary">
+            <labe class="label">Email: <input type="email" name="email"/></label>
+          </span>
+          <span class="text-secondary"
+            ><label class="label">Phone Number: <input type="tel" name="tel"/></label>
+          </span>
+          <span class="text-secondary">
+            <label class="label"
+              >Inquiry:
+              <select>
+                <option value="DbeatDynamic">dbeatdynamic</option>
+                <option value="MAFCPremiershipReunion2009"
+                  >2009 MAFC Premiership Reunion</option
+                >
+              </select></label
+            >
+          </span>
+          <span class="text-secondary">
+            <label class="label">Message: <textarea name="message"></textarea></label>
+          </span>
+          <div data-netlify-recaptcha="true"></div>
+          <span class="text-secondary">
+            <button type="submit">Send</button>
+          </span>
+        </form>
       </div>
+    </div>
     </main>
-
     <footer id="main-footer">
       Copyright &copy; 2019
       <a href="https://dbeatdynamic.com"> March To The Dbeat! Find Out How!</a>

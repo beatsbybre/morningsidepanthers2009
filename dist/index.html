@@ -78,21 +78,20 @@
     </header>
 
     <main id="home">
-      <h1 class="lg-heading">
-        Morningside Panthers
+      <h1 class="lg-heading">Morningside Panthers Australian Football Club</h1>
+      <h1 class="lg-heading"><span class="text-secondary">2009 Senior, Reserve & Under 18 Premiership Reunion Portal</span>
       </h1>
-      <h1 class="lg-heading">
-        <span class="text-secondary">Australian Football Club</span>
-      </h1>
+     
+          
+        </h1>
       <h2 class="sm-heading">
-        2009 Senior, Reserve & Under 18 Premiership Decade Reunion
+   Tickets, Merchandise and Donations - Enter Below
       </h2>
-
-      <div class="icons">
+            <div class="icons">
         <div class="icon1">
           <a
             ><i
-              class="fas fa-ticket-alt fa-3x"
+              class="fas fa-ticket-alt fa-4x"
               id="checkout-button-sku_EyVVaB4n9Vormh"
               role="link"
             ></i>
@@ -135,53 +134,10 @@
           >
         </div>
 
-        <div class="icon2">
-          <a>
-            <i
-              class="fas fa-check-square fa-3x"
-              id="checkout-button-sku_EyVYX5DLa6CNoO"
-              role="link"
-            ></i
-          ></a>
-
-          <div id="error-message"></div>
-
-          <script>
-            var stripe = Stripe("pk_live_CplOzOmJdlSDDjn5dL28wnub");
-
-            var checkoutIcon = document.getElementById(
-              "checkout-button-sku_EyVYX5DLa6CNoO"
-            );
-            checkoutIcon.addEventListener("click", function() {
-              // When the customer clicks on the button, redirect
-              // them to Checkout.
-              stripe
-                .redirectToCheckout({
-                  items: [{ sku: "sku_EyVYX5DLa6CNoO", quantity: 1 }],
-
-                  // Note that it is not guaranteed your customers will be redirected to this
-                  // URL *100%* of the time, it's possible that they could e.g. close the
-                  // tab between form submission and the redirect.
-                  successUrl:
-                    "http://morningsidepanthers2009.dbeatdynamic.com/success",
-                  cancelUrl: "http://morningsidepanthers2009.dbeatdynamic.com/"
-                })
-                .then(function(result) {
-                  if (result.error) {
-                    // If `redirectToCheckout` fails due to a browser or network
-                    // error, display the localized error message to your customer.
-                    var displayError = document.getElementById("error-message");
-                    displayError.textContent = result.error.message;
-                  }
-                });
-            });
-          </script>
-        </div>
-
-        <div class="icon3">
+     <div class="icon2">
           <a
             ><i
-              class="fas fa-tshirt fa-3x"
+              class="fas fa-tshirt fa-4x"
               id="checkout-button-sku_EyVcJNp8FikeO6"
               role="link"
             ></i>
@@ -223,6 +179,11 @@
             </script></a
           >
         </div>
+        <div class="icon3">
+            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CMTM6E97V4SW2&source=url">
+              <i class="fas fa-hand-holding-heart fa-4x"></i>
+            </a>
+  </div>
         <!-- <div class="icon4">
           <a
             ><i
@@ -324,7 +285,9 @@
         <a href="#!">
           <i class="fas fa-hand-holding-heart fa-8x"></i>
         </a>
+      
 -->
+</div>
     </main>
     <footer id="main-footer">
       Copyright &copy; 2019

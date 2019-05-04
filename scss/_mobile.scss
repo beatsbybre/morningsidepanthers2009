@@ -25,6 +25,10 @@
     .justifiedText {
       text-align: justify;
     }
+    .list {
+      text-align: left;
+      font-size: 1.3rem;
+    }
     .sponsor {
       grid-template-columns: repeat(3, 1fr);
       align-items: center;
@@ -55,11 +59,15 @@
       line-height: 1;
       margin-bottom: 1rem;
       text-align: center;
-      font-size: 3rem;
+      font-size: 2rem;
     }
 
     .justifiedText {
       text-align: justify;
+    }
+    .list {
+      text-align: left;
+      font-size: 1.3rem;
     }
     p {
       font-size: 1.3rem;
@@ -93,6 +101,10 @@
 
     .justifiedText {
       text-align: justify;
+    }
+    .list {
+      text-align: left;
+      font-size: 1.3rem;
     }
     p {
       font-size: 1.3rem;
@@ -160,17 +172,21 @@
       line-height: 1;
       margin-bottom: 1rem;
       text-align: center;
-      font-size: 3rem;
+      font-size: 2rem;
     }
     .sm-heading {
       line-height: 1;
       margin-bottom: 0.1rem;
       text-align: center;
-      font-size: 1.5rem;
+      font-size: 1rem;
     }
 
     .justifiedText {
       text-align: justify;
+    }
+    .list {
+      text-align: left;
+      font-size: 1.3rem;
     }
     p {
       font-size: 1.3rem;

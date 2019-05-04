@@ -29,6 +29,7 @@ h3 {
   }
 
   &.sm-heading {
+    font-size: 3rem;
     margin-bottom: 1rem;
     padding: 1rem 1rem;
     background: rgba(lighten($secondary-color, 2), 1);
@@ -111,6 +112,8 @@ main {
   grid-template-columns: repeat(3, 1fr);
 
   .bio-image {
+    width: 250px;
+    height: 250px;
     grid-area: bioimage;
     margin: auto;
     border-radius: 50%;
@@ -175,11 +178,18 @@ main {
 
 // Contact Page
 .boxes {
-  display: flex;
+  display: flexbox;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
   margin-top: 1rem;
+
+  form {
+    display: grid;
+    align-items: center;
+    grid-gap: 0.7rem;
+    grid-template-columns: repeat(1, 1fr);
+  }
 
   div {
     font-size: 2rem;
