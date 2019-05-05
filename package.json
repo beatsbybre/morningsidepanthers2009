@@ -12,6 +12,10 @@
   "license": "ISC",
   "dependencies": {
     "gh-pages": "^2.0.1",
-    "node-sass": "^4.12.0"
+    "node-sass": "^4.12.0",
+    "update": "^0.7.4"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.8.1"
   }
 }
