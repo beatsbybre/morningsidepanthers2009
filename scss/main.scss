@@ -1,6 +1,10 @@
 @import "config";
 @import "menu";
-
+@font-face {
+  font-family: "Arvo";
+  font-display: auto;
+  src: local("Arvo"), url("/css/fontawesome-all.css") format("woff2");
+}
 * {
   box-sizing: border-box;
 }
