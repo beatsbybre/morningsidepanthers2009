@@ -248,11 +248,11 @@ main {
 
 // Contact Page
 .boxes {
-  display: flexbox;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  display: grid;
   align-items: center;
   margin-top: 1rem;
+  text-align: center;
+  width: 100%;
 
   div {
     font-size: 2rem;

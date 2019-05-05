@@ -274,11 +274,11 @@ main {
     text-align: -webkit-center; }
 
 .boxes {
-  display: flexbox;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  display: grid;
   align-items: center;
-  margin-top: 1rem; }
+  margin-top: 1rem;
+  text-align: center;
+  width: 100%; }
   .boxes div {
     font-size: 2rem;
     border: 3px #fff solid;
