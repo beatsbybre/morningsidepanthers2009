@@ -117,7 +117,7 @@ body {
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: rgba(255, 255, 255, 0.9); }
+      background: rgba(255, 255, 255, 0.6); }
 
 h1,
 h2,
@@ -160,26 +160,45 @@ main {
     display: grid;
     grid-gap: 0.5rem;
     grid-template-areas: "icon1 icon2 icon3";
-    grid-template-columns: repeat(3, 1fr); }
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center; }
     main .icons .icon1 {
-      grid-area: icon1; }
+      grid-area: icon1;
+      justify-content: center; }
     main .icons .icon2 {
-      grid-area: icon2; }
+      grid-area: icon2;
+      justify-content: center; }
     main .icons .icon3 {
-      grid-area: icon3; }
-    main .icons .icon4 {
-      grid-area: icon4; }
-    main .icons .icon5 {
-      grid-area: icon5; }
+      grid-area: icon3;
+      justify-content: center; }
     main .icons a {
       padding: 0.8rem; }
       main .icons a:hover {
         color: red;
         transition: all 0.5s ease-out; }
-  main#home {
-    overflow: hidden; }
-    main#home h1 {
-      margin-top: 5vh; }
+    main .icons#home {
+      overflow: hidden; }
+      main .icons#home h1 {
+        margin-top: 5vh; }
+  main .success {
+    margin-top: 1rem;
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-areas: "icon2 icon3";
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    justify-content: center; }
+    main .success .icon2 {
+      grid-area: icon2;
+      text-align: center; }
+    main .success .icon3 {
+      grid-area: icon3;
+      text-align: center; }
+    main .success a {
+      padding: 0.8rem; }
+      main .success a:hover {
+        color: red;
+        transition: all 0.5s ease-out; }
 
 .main-info {
   display: grid;
@@ -260,11 +279,6 @@ main {
   justify-content: space-evenly;
   align-items: center;
   margin-top: 1rem; }
-  .boxes form {
-    display: grid;
-    align-items: center;
-    grid-gap: 0.7rem;
-    grid-template-columns: repeat(1, 1fr); }
   .boxes div {
     font-size: 2rem;
     border: 3px #fff solid;
