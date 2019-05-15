@@ -40,7 +40,7 @@
         </div>
         <ul class="menu-nav">
           <li class="nav-item current">
-            <a href="https://morningsidepanthers2009.dbeatdynamic.com" class="nav-link">
+            <a href="index.html" class="nav-link">
               Home
             </a>
           </li>
@@ -74,9 +74,9 @@
       <h2 class="sm-heading">
    Tickets, Merchandise and Donations - Enter Below
       </h2>
-  <div class="icons">
-    <div class="icon1">
-      <a
+            <div class="icons">
+        <div class="icon1">
+          <a
             ><i
               class="fas fa-ticket-alt fa-3x"
               id="checkout-button-sku_EyVVaB4n9Vormh"
@@ -171,7 +171,110 @@
               <i class="fas fa-hand-holding-heart fa-3x"></i>
             </a>
   </div>
-  </div>
+        <!-- <div class="icon4">
+          <a
+            ><i
+              class="fas fa-wine-bottle fa-3x"
+              id="checkout-button-sku_EzFqtV00UNtkNR"
+              role="link"
+            ></i>
+
+            <div id="error-message"></div>
+
+            <script>
+              var stripe = Stripe("pk_live_CplOzOmJdlSDDjn5dL28wnub");
+
+              var checkoutIcon = document.getElementById(
+                "checkout-button-sku_EzFqtV00UNtkNR"
+              );
+              checkoutIcon.addEventListener("click", function() {
+                // When the customer clicks on the button, redirect
+                // them to Checkout.
+                stripe
+                  .redirectToCheckout({
+                    items: [{ sku: "sku_EzFqtV00UNtkNR", quantity: 1 }],
+
+                    // Note that it is not guaranteed your customers will be redirected to this
+                    // URL *100%* of the time, it's possible that they could e.g. close the
+                    // tab between form submission and the redirect.
+                    successUrl:
+                      "http://morningsidepanthers2009.dbeatdynamic.com/success",
+                    cancelUrl:
+                      "http://morningsidepanthers2009.dbeatdynamic.com/"
+                  })
+                  .then(function(result) {
+                    if (result.error) {
+                      // If `redirectToCheckout` fails due to a browser or network
+                      // error, display the localized error message to your customer.
+                      var displayError = document.getElementById(
+                        "error-message"
+                      );
+                      displayError.textContent = result.error.message;
+                    }
+                  });
+              });
+            </script></a
+          >
+        </div>
+        <div class="icon5">
+          <a
+            ><i
+              class="fas fa-address-card fa-3x"
+              id="checkout-button-sku_EyVh7AYteB4PHU"
+              role="link"
+            ></i>
+
+            <div id="error-message"></div>
+
+            <script>
+              var stripe = Stripe("pk_live_CplOzOmJdlSDDjn5dL28wnub");
+
+              var checkoutIcon = document.getElementById(
+                "checkout-button-sku_EyVh7AYteB4PHU"
+              );
+              checkoutIcon.addEventListener("click", function() {
+                // When the customer clicks on the button, redirect
+                // them to Checkout.
+                stripe
+                  .redirectToCheckout({
+                    items: [{ sku: "sku_EyVh7AYteB4PHU", quantity: 1 }],
+
+                    // Note that it is not guaranteed your customers will be redirected to this
+                    // URL *100%* of the time, it's possible that they could e.g. close the
+                    // tab between form submission and the redirect.
+                    successUrl:
+                      "http://morningsidepanthers2009.dbeatdynamic.com/success",
+                    cancelUrl:
+                      "http://morningsidepanthers2009.dbeatdynamic.com/"
+                  })
+                  .then(function(result) {
+                    if (result.error) {
+                      // If `redirectToCheckout` fails due to a browser or network
+                      // error, display the localized error message to your customer.
+                      var displayError = document.getElementById(
+                        "error-message"
+                      );
+                      displayError.textContent = result.error.message;
+                    }
+                  });
+              });
+            </script></a
+          >
+        </div>-->
+      </div>
+      <!--
+        <a href="#!">
+          <i class="fas fa-store fa-8x"></i>
+        </a>
+        <a href="#!">
+          <i class="fas fa-hand-holding-usd fa-8x"></i>
+        </a>
+        <a href="#!">
+          <i class="fas fa-hand-holding-heart fa-8x"></i>
+        </a>
+      
+-->
+</div>
     </main>
     <footer id="main-footer">
       Copyright &copy; 2019
