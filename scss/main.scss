@@ -229,13 +229,6 @@ main {
   align-items: center;
   margin-top: 1rem;
 
-  form {
-    display: grid;
-    align-items: center;
-    grid-gap: 0.7rem;
-    grid-template-columns: repeat(1, 1fr);
-  }
-
   div {
     font-size: 2rem;
     border: 3px #fff solid;

@@ -135,6 +135,17 @@
       "links3";
     grid-template-columns: 1fr;
   }
+
+  form {
+    grid-template-areas: "label1
+  label2
+  label3
+  label4
+  label5
+  label6";
+
+    grid-template-columns: 1fr;
+  }
 }
 
 // Smartphones
@@ -194,6 +205,17 @@
         "links2"
         "sponsorship3"
         "links3";
+      grid-template-columns: 1fr;
+    }
+
+    form {
+      grid-template-areas: "label1
+    label2
+    label3
+    label4
+    label5
+    label6";
+
       grid-template-columns: 1fr;
     }
   }

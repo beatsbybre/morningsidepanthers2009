@@ -260,11 +260,6 @@ main {
   justify-content: space-evenly;
   align-items: center;
   margin-top: 1rem; }
-  .boxes form {
-    display: grid;
-    align-items: center;
-    grid-gap: 0.7rem;
-    grid-template-columns: repeat(1, 1fr); }
   .boxes div {
     font-size: 2rem;
     border: 3px #fff solid;
@@ -382,6 +377,9 @@ main {
     grid-template-columns: 1fr; }
   .sponsor {
     grid-template-areas: "sponsorship1" "links1" "sponsorship2" "links2" "sponsorship3" "links3";
+    grid-template-columns: 1fr; }
+  form {
+    grid-template-areas: "label1 label2 label3 label4 label5 label6";
     grid-template-columns: 1fr; } }
 
 @media screen and (max-width: 500px) {
@@ -411,6 +409,9 @@ main {
     grid-template-columns: 1fr; }
   main .sponsor {
     grid-template-areas: "sponsorship1" "links1" "sponsorship2" "links2" "sponsorship3" "links3";
+    grid-template-columns: 1fr; }
+  main form {
+    grid-template-areas: "label1 label2 label3 label4 label5 label6";
     grid-template-columns: 1fr; }
   ul.menu-nav,
   div.menu-branding {
