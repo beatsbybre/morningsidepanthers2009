@@ -13,7 +13,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css"/>
-    <script src="https://js.stripe.com/v3"></script>
     <title>2009 Premiership Reunion</title>
   </head>
   <body id="bg-img">
@@ -40,7 +39,7 @@
         </div>
         <ul class="menu-nav">
           <li class="nav-item current">
-            <a href="https://premiers09.dbeatdynamic.com" class="nav-link">
+            <a href="https://premiers.dbeatdynamic.com" class="nav-link">
               Home
             </a>
           </li>
@@ -67,69 +66,21 @@
     <main id="home">
       <h1 class="lg-heading">2009 AFLQ</h1>
       <h1 class="lg-heading">SENIOR, RESERVE AND UNDER 18 PREMIERS</h1>
-      <h1 class="lg-heading"><span class="text-secondary">Reunion Event Booking Portal</span>
+      <h1 class="lg-heading"><span class="text-secondary">June 15th, 2019 Decade Reunion Event Booking Portal</span>
       </h1>
      
           
         </h1>
       <h2 class="sm-heading">
-   Tickets, Merchandise and Donations - Enter Below
+   Tickets and Donations Required by May 26th, 2019
       </h2>
   <div class="icons">
-    <div class="icon1">
-            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=K2VM8W67ZBRM2"><i class="fas fa-ticket-alt fa-3x"
-              id="checkout-button-sku_EyVVaB4n9Vormh"
-              role="link"
-            ></i>
-            </a>
-        </div>
+  <div class="icon1">
+  <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=K2VM8W67ZBRM2"><i class="fas fa-ticket-alt fa-3x"></i>
+  </a>
+  </div>
 
-     <div class="icon2">
-          <a
-            ><i
-              class="fas fa-tshirt fa-3x"
-              id="checkout-button-sku_F0HLYp9ArGYVTp"
-              role="link"
-            ></i>
-
-            <div id="error-message"></div>
-
-            <script>
-              var stripe = Stripe("pk_live_CplOzOmJdlSDDjn5dL28wnub");
-
-              var checkoutIcon = document.getElementById(
-                "checkout-button-sku_F0HLYp9ArGYVTp"
-              );
-              checkoutIcon.addEventListener("click", function() {
-                // When the customer clicks on the button, redirect
-                // them to Checkout.
-                stripe
-                  .redirectToCheckout({
-                    items: [{ sku: "sku_F0HLYp9ArGYVTp", quantity: 1 }],
-
-                    // Note that it is not guaranteed your customers will be redirected to this
-                    // URL *100%* of the time, it's possible that they could e.g. close the
-                    // tab between form submission and the redirect.
-                    successUrl:
-                      "https://premiers09.dbeatdynamic.com/success",
-                    cancelUrl:
-                      "https://premiers09.dbeatdynamic.com/"
-                  })
-                  .then(function(result) {
-                    if (result.error) {
-                      // If `redirectToCheckout` fails due to a browser or network
-                      // error, display the localized error message to your customer.
-                      var displayError = document.getElementById(
-                        "error-message"
-                      );
-                      displayError.textContent = result.error.message;
-                    }
-                  });
-              });
-            </script></a
-          >
-        </div>
-        <div class="icon3">
+<div class="icon2">
             <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CMTM6E97V4SW2&source=url">
               <i class="fas fa-hand-holding-heart fa-3x"></i>
             </a>

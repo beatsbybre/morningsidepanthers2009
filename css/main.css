@@ -162,17 +162,14 @@ main {
     margin-top: 1rem;
     display: grid;
     grid-gap: 0.5rem;
-    grid-template-areas: "icon1 icon2 icon3";
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "icon1 icon2";
+    grid-template-columns: repeat(2, 1fr);
     text-align: center; }
     main .icons .icon1 {
       grid-area: icon1;
       justify-content: center; }
     main .icons .icon2 {
       grid-area: icon2;
-      justify-content: center; }
-    main .icons .icon3 {
-      grid-area: icon3;
       justify-content: center; }
     main .icons a {
       padding: 0.8rem; }
@@ -187,15 +184,12 @@ main {
     margin-top: 1rem;
     display: grid;
     grid-gap: 0.5rem;
-    grid-template-areas: "icon2 icon3";
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "icon2";
+    grid-template-columns: repeat(1, 1fr);
     text-align: center;
     justify-content: center; }
     main .success .icon2 {
       grid-area: icon2;
-      text-align: center; }
-    main .success .icon3 {
-      grid-area: icon3;
       text-align: center; }
     main .success a {
       padding: 0.8rem; }
