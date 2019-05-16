@@ -77,42 +77,10 @@
       </h2>
   <div class="icons">
     <div class="icon1">
-            <a>  <i class="fas fa-ticket-alt fa-3x"
+            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=K2VM8W67ZBRM2"><i class="fas fa-ticket-alt fa-3x"
               id="checkout-button-sku_EyVVaB4n9Vormh"
               role="link"
             ></i>
-
-            <div id="error-message"></div>
-
-            <script>
-              var stripe = Stripe('pk_live_CplOzOmJdlSDDjn5dL28wnub');
-            
-              var checkoutButton = document.getElementById('checkout-button-sku_EyVVaB4n9Vormh');
-              checkoutButton.addEventListener('click', function () {
-                // When the customer clicks on the button, redirect
-                // them to Checkout.
-                stripe.redirectToCheckout({
-                  items: [{sku: 'sku_EyVVaB4n9Vormh', quantity: 1}],
-            
-                  // Do not rely on the redirect to the successUrl for fulfilling
-                  // purchases, customers may not always reach the success_url after
-                  // a successful payment.
-                  // Instead use one of the strategies described in
-                  // https://stripe.com/docs/payments/checkout/fulfillment
-                  successUrl: 'https://premiers09.dbeatdynamic.com/success',
-                  cancelUrl: 'https://premiers09.dbeatdynamic.com',
-                  billingAddressCollection: 'required',
-                })
-                .then(function (result) {
-                  if (result.error) {
-                    // If `redirectToCheckout` fails due to a browser or network
-                    // error, display the localized error message to your customer.
-                    var displayError = document.getElementById('error-message');
-                    displayError.textContent = result.error.message;
-                  }
-                });
-              });
-            </script>
             </a>
         </div>
 
@@ -145,7 +113,7 @@
                     successUrl:
                       "https://premiers09.dbeatdynamic.com/success",
                     cancelUrl:
-                      "http://premiers09.dbeatdynamic.com/"
+                      "https://premiers09.dbeatdynamic.com/"
                   })
                   .then(function(result) {
                     if (result.error) {
